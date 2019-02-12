@@ -6,8 +6,8 @@ SCRIPT_DIR=os.path.abspath(os.path.dirname(os.path.abspath(sys.argv[0])))
 
 paths = [
   os.path.join(SCRIPT_DIR, "share/templates"),
-  "/usr/share/pkgtool/share/templates",
-  "/usr/local/share/pkgtool/share/templates",
+  "/usr/share/pkgtool/templates",
+  "/usr/local/share/pkgtool/templates",
 ]
 
 def find_template_path():
@@ -29,7 +29,6 @@ def make_template(template_type, project_name):
     click.echo('project_type %s is invalid' % template_type)
     exit(1)
   return template.replace('%PROJECT_NAME%', project_name)
-
 
 @click.group()
 @click.pass_context
