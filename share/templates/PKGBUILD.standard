@@ -1,0 +1,28 @@
+pkgname='%PROJECT_NAME%'
+pkgdesc='My great project!'
+pkgver=1.0
+pkgrel=1
+epoch=1
+arch=('any')
+license=('MIT')
+#url='https://www.example.org'
+#depends=()
+#makedepends=()
+#optdepends=()
+#checkdepends=()
+#provides=()
+#conflicts=()
+#replaces=()
+
+#source=('external_source')
+#sha256sums=('SKIP')
+
+prepare() {
+}
+
+build() {
+}
+
+package() {
+}
+
